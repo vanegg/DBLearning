@@ -4,9 +4,11 @@ class TasksView
 	def index(tasks)
     puts "Las tareas en la lista son:"
     puts "ID"
+    num = 0
     tasks.each do |task|
       status = task.complete ? "X" : " "
-    puts "#{task.id}. [#{status}] #{task.name}"
+      num += 1
+    puts "#{num}. [#{status}] #{task.name}"
     end
 	end
 

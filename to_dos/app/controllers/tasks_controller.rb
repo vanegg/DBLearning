@@ -28,15 +28,18 @@ class TasksController
   end
 
   def delete
-    id = @view.delete(1)
-    task = Task.find_by(id: id)
+    id_temp = @view.delete(1).to_i - 1
+    tasks = Task.all
+    task = Task.find(tasks[id_temp].id)
     task.destroy ? @view.delete(2) : @view.error
   end
 
   def complete
-    id = @view.update(1)
-    task = Task.find_by(id: id)
+    id_temp = @view.update(1).to_i - 1
+    tasks = Task.all
+    task = Task.find(tasks[id_temp].id)
     value = task.complete ? false : true
     task.update(complete: value) ? @view.update(2) : @view.error
   end
+  
 end

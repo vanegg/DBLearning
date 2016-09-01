@@ -14,4 +14,5 @@ Task.create(name: "Comprar comida")
 Task.create(name: "Ir al parque a cazar pokemons")
 Task.create(name: "Platicar por telefono")
 Task.create(name: "Descansar")
+Task.create(name: "Dormir mas")
 p Task.all
