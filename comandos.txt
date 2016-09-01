@@ -1,3 +1,4 @@
+#EN LA TERMINAL
 cat << EOF > ~/.sqliterc
 .headers on
 .mode column

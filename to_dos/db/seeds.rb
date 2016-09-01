@@ -1,0 +1,17 @@
+# Este archivo sirve para crear registros de prueba
+Task.create(name: "Ir al curso")
+Task.create(name: "Hacer el ejercicio")
+Task.create(name: "Comer")
+Task.create(name: "Regresar a casa")
+Task.create(name: "Ir al GYM")
+Task.create(name: "Hacer tarea")
+Task.create(name: "Bañarme")
+Task.create(name: "Ver Netflix")
+Task.create(name: "Cenar")
+Task.create(name: "Lavarse los dientes")
+Task.create(name: "Dormir")
+Task.create(name: "Comprar comida")
+Task.create(name: "Ir al parque a cazar pokemons")
+Task.create(name: "Platicar por telefono")
+Task.create(name: "Descansar")
+p Task.all
